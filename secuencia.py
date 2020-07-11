@@ -63,8 +63,8 @@ def completar_2_bloques(vertical, horizontal):
 
 
 if __name__ == '__main__':
-    horizontal = [3,4,5,6,7,8,9]
-    vertical = [1,2,3,4,5,8,9]
+    horizontal = [1,2,4,5,6,8,9]
+    vertical = [1,2,3,4,6,8,9]
 
     print(f'Valores iniciales: {vertical}')
     print(f'Valores iniciales: {horizontal}')
