@@ -22,16 +22,51 @@ def completar_1_bloque(vertical, horizontal):
     else:
         print('El vector está completo')
     
-    return f'Vertical: {vertical} / Horizontal {horizontal}'
+    return resto_x, resto_y
+
+def completar_2_bloques(vertical, horizontal):
+    
+    catch_y = sum(vertical)
+    if catch_y <= 45:
+        resto_y = 45 - catch_y
+        resto_y_1 = resto_y // 2
+        resto_y_2 = resto_y - resto_y_1 
+        print(f'Numeros {resto_y_1} y {resto_y_2} agregados')
+        vertical.append(resto_y_1)
+        vertical.append(resto_y_1)
+        
+        vertical.sort()
+    else:
+        print('El vector está completo')
+    
+    catch_x = sum(horizontal)
+    if catch_x <= 45:
+        resto_x = 45 - catch_x
+        resto_x_1 = resto_x // 2
+        resto_x_2 = resto_x - resto_x_1 
+        print(f'Numeros {resto_x_1} y {resto_x_2} agregados')
+        horizontal.append(resto_x_1)
+        horizontal.append(resto_x_2)
+        
+        horizontal.sort()
+    else:
+        print('El vector está completo')
+    
+    return resto_y_1, resto_y_2, resto_x_1, resto_x_2
+
+    
+
+
+
     
     
 
 
 if __name__ == '__main__':
-    horizontal = [1,2,3,4,5,6,8,9]
-    vertical = [1,3,4,5,6,7,8,9]
+    horizontal = [3,4,5,6,7,8,9]
+    vertical = [1,2,3,4,5,8,9]
 
-    final = completar_1_bloque(vertical, horizontal)
+    final = completar_2_bloques(vertical, horizontal)
 
     
     
