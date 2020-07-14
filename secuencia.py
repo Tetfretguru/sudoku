@@ -26,6 +26,7 @@ def completar_1_bloque(vertical, horizontal):
 
 def completar_2_bloques(vertical, horizontal):
     
+    """ Implementar binary search en recursividad """
     catch_y = sum(vertical)
     if catch_y <= 45:
         resto_y = 45 - catch_y
@@ -54,7 +55,8 @@ def completar_2_bloques(vertical, horizontal):
     
     return resto_y_1, resto_y_2, resto_x_1, resto_x_2
 
-    
+def busqueda_binaria():
+    pass   
 
 
 
