@@ -55,8 +55,7 @@ def completar_2_bloques(vertical, horizontal):
     
     return resto_y_1, resto_y_2, resto_x_1, resto_x_2
 
-def busqueda_binaria():
-    pass   
+  
 
 
 
